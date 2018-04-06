@@ -11,6 +11,14 @@
 		0353BF072077EC99004909BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0353BF052077EC99004909BF /* Main.storyboard */; };
 		0353BF092077EC9B004909BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0353BF082077EC9B004909BF /* Assets.xcassets */; };
 		0353BF0C2077EC9B004909BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0353BF0A2077EC9B004909BF /* LaunchScreen.storyboard */; };
+		0353BF172077EFE0004909BF /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 0353BF162077EFE0004909BF /* field_observations.json */; };
+		0353BF192077F11B004909BF /* animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF182077F11B004909BF /* animal.swift */; };
+		0353BF1B2077F2BE004909BF /* fieldObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF1A2077F2BE004909BF /* fieldObservation.swift */; };
+		0353BF1F2077F4F9004909BF /* fieldObservationObservationsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF1E2077F4F9004909BF /* fieldObservationObservationsJSONParser.swift */; };
+		0353BF212077FA44004909BF /* fieldObservationsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF202077FA44004909BF /* fieldObservationsJSONLoader.swift */; };
+		0353BF232077FDF4004909BF /* FieldObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF222077FDF4004909BF /* FieldObservationsViewController.swift */; };
+		0353BF252077FE74004909BF /* FieldObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF242077FE74004909BF /* FieldObservationDetailViewController.swift */; };
+		0353BF27207805E1004909BF /* fieldObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353BF26207805E1004909BF /* fieldObservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		0353BF082077EC9B004909BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0353BF0B2077EC9B004909BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0353BF0D2077EC9B004909BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0353BF162077EFE0004909BF /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		0353BF182077F11B004909BF /* animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animal.swift; sourceTree = "<group>"; };
+		0353BF1A2077F2BE004909BF /* fieldObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldObservation.swift; sourceTree = "<group>"; };
+		0353BF1E2077F4F9004909BF /* fieldObservationObservationsJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldObservationObservationsJSONParser.swift; sourceTree = "<group>"; };
+		0353BF202077FA44004909BF /* fieldObservationsJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldObservationsJSONLoader.swift; sourceTree = "<group>"; };
+		0353BF222077FDF4004909BF /* FieldObservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationsViewController.swift; sourceTree = "<group>"; };
+		0353BF242077FE74004909BF /* FieldObservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationDetailViewController.swift; sourceTree = "<group>"; };
+		0353BF26207805E1004909BF /* fieldObservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldObservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +68,29 @@
 		0353BF002077EC99004909BF /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				0353BF132077EF52004909BF /* Model */,
 				0353BF012077EC99004909BF /* AppDelegate.swift */,
 				0353BF052077EC99004909BF /* Main.storyboard */,
 				0353BF082077EC9B004909BF /* Assets.xcassets */,
 				0353BF0A2077EC9B004909BF /* LaunchScreen.storyboard */,
 				0353BF0D2077EC9B004909BF /* Info.plist */,
+				0353BF222077FDF4004909BF /* FieldObservationsViewController.swift */,
+				0353BF242077FE74004909BF /* FieldObservationDetailViewController.swift */,
+				0353BF26207805E1004909BF /* fieldObservationTableViewCell.swift */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		0353BF132077EF52004909BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0353BF162077EFE0004909BF /* field_observations.json */,
+				0353BF182077F11B004909BF /* animal.swift */,
+				0353BF1A2077F2BE004909BF /* fieldObservation.swift */,
+				0353BF1E2077F4F9004909BF /* fieldObservationObservationsJSONParser.swift */,
+				0353BF202077FA44004909BF /* fieldObservationsJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0353BF0C2077EC9B004909BF /* LaunchScreen.storyboard in Resources */,
+				0353BF172077EFE0004909BF /* field_observations.json in Resources */,
 				0353BF092077EC9B004909BF /* Assets.xcassets in Resources */,
 				0353BF072077EC99004909BF /* Main.storyboard in Resources */,
 			);
@@ -132,7 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0353BF212077FA44004909BF /* fieldObservationsJSONLoader.swift in Sources */,
+				0353BF27207805E1004909BF /* fieldObservationTableViewCell.swift in Sources */,
 				0353BF022077EC99004909BF /* AppDelegate.swift in Sources */,
+				0353BF232077FDF4004909BF /* FieldObservationsViewController.swift in Sources */,
+				0353BF1F2077F4F9004909BF /* fieldObservationObservationsJSONParser.swift in Sources */,
+				0353BF252077FE74004909BF /* FieldObservationDetailViewController.swift in Sources */,
+				0353BF1B2077F2BE004909BF /* fieldObservation.swift in Sources */,
+				0353BF192077F11B004909BF /* animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
